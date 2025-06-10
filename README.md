@@ -15,7 +15,7 @@ This program is a virus designed to "kill" Windows operating systems. It support
 ---
 ## Files Map in SilentKiller.exe:
 
-├── SilentKiller.exe (MAIN/top-level SFX file, responsible for initial extraction and execution)
+````├── SilentKiller.exe (MAIN/top-level SFX file, responsible for initial extraction and execution)
 │   ├── silentkiller_old.exe (Nested SFX file; contains components for the older virus version) (this is the virus old version exe, a SFX)
 │   │   ├── MSVCR71.dll # Microsoft Visual C++ Runtime Library (v7.1), a common dependency for applications compiled with old Visual C++ versions (and they are the supported/important versions for old OSes like 95, 98, etc.).
 │   │   ├── silentkiller.exe # The old version of the virus executable (this is the real executable or program of the virus (old version or 9x series version)).
@@ -23,4 +23,4 @@ This program is a virus designed to "kill" Windows operating systems. It support
 │   │   ├── viruslogo.ico # The icon file associated with/used by the virus.
 │   │   └── w9xpopen.exe # This program is a crucial component for enabling communication with the operating system and its APIs. It facilitates the execution of various system-level tasks, such as processing command-line instructions (e.g., via cmd.exe). Without W9XPOPEN.exe, certain functionalities requiring direct interaction with the system's core processes and libraries would be unavailable.
 │   ├── silentkiller_new.exe # The new version of the virus executable (this is the executable or program of the virus (new version and it's for Windows versions that are XP (NT 5.1) or newer (> NT 5.1)).
-│   └── dispatcher.exe # The primary executable launched by the main SFX; determines and executes either the old (pre-Windows XP) or new (Windows XP or later) virus version based on OS detection.
+│   └── dispatcher.exe # The primary executable launched by the main SFX; determines and executes either the old (pre-Windows XP) or new (Windows XP or later) virus version based on OS detection.````
